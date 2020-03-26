@@ -36,7 +36,7 @@ function setTime() {
     }
 
     //convert the values into angles
-    var h_angle = hr * 30 + min * 0.5;
+    var h_angle = hr * 30 + min * 0.5 + sec / 120;
     var m_angle = min * 6 + 0.1 * sec;
     var s_angle = sec * 6;
 
