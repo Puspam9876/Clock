@@ -1,21 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/svg" href="icon.svg" />
-    <title>Clock</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/svg" href="icon.svg" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Clock</title>
 </head>
 
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 101 101">
-		<circle cx="50" cy="50" r="50" stroke="black" stroke-width="1" fill="white"/>
-		<line id="hour" x1="50" y1="50" x2="50" y2="20" stroke="green" stroke-width="2" stroke-linecap="round"/>
-		<circle cx="50" cy="50" r="3" stroke-width="0" fill="green"/>
-		<line id="minute" x1="50" y1="50" x2="50" y2="10" stroke="orange" stroke-linecap="round"/>
-		<circle cx="50" cy="50" r="2" stroke-width="0" fill="orange"/>
-		<line id="second" x1="50" y1="50" x2="50" y2="10" stroke="purple" stroke-width="0.5" stroke-linecap="round"/>
-		<circle cx="50" cy="50" r="1" stroke-width="0" fill="purple"/>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 101 101" id="clock_area">
+		<circle cx="50" cy="50" r="50" stroke="black" stroke-width="1" fill="white" />
+		<line id="hour_hand" class="hand" x1="50" y1="50" x2="50" y2="20" stroke="green" stroke-width="2"
+			stroke-linecap="round" />
+		<circle cx="50" cy="50" r="3" stroke-width="0" fill="green" />
+		<line id="minute_hand" class="hand" x1="50" y1="50" x2="50" y2="10" stroke="orange" stroke-linecap="round" />
+		<circle cx="50" cy="50" r="2" stroke-width="0" fill="orange" />
+		<line id="second_hand" class="hand" x1="50" y1="50" x2="50" y2="10" stroke="purple" stroke-width="0.5"
+			stroke-linecap="round" />
+		<circle cx="50" cy="50" r="1" stroke-width="0" fill="purple" />
 		<g font-size="7" font-family="Arial">
 			<text x="46" y="9">12</text>
 			<text x="70" y="15">1</text>
@@ -31,7 +35,6 @@
 			<text x="25" y="15.5">11</text>
 		</g>
 	</svg>
-	<div style="position:fixed; right:10px; bottom:10px;">Made by Puspam</div>
 </body>
 <script src="script.js"></script>
 

@@ -21,10 +21,6 @@ for (i = 0; i < 60; i++) {
     }
 }
 
-var h_hand = document.getElementById("hour");
-var m_hand = document.getElementById("minute");
-var s_hand = document.getElementById("second");
-
 function setTime() {
     //get the current time
     var time = new Date();
@@ -41,9 +37,9 @@ function setTime() {
     var s_angle = sec * 6;
 
     //rotate the hands
-    h_hand.setAttribute("transform", "rotate(" + h_angle + ",50,50)");
-    m_hand.setAttribute("transform", "rotate(" + m_angle + ",50,50)");
-    s_hand.setAttribute("transform", "rotate(" + s_angle + ",50,50)");
+    hour_hand.setAttribute("transform", "rotate(" + h_angle + ",50,50)");
+    minute_hand.setAttribute("transform", "rotate(" + m_angle + ",50,50)");
+    second_hand.setAttribute("transform", "rotate(" + s_angle + ",50,50)");
 }
 setTime();
 setInterval(setTime, 1000);
