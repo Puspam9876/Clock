@@ -1,13 +1,33 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 
-svg {
-    max-height: 100%;
-    max-width: 100%;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+body {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock_area {
+    width: calc(100vmin - 40px);
+    aspect-ratio: 1;
+}
+
+#clock_area .marks {
+    font-family: 'Arial';
+    text-anchor: middle;
+    text-align: center;
+    dominant-baseline: central;
+}
+
+#clock_area .hands>* {
+    transform-origin: center;
 }

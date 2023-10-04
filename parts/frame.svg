@@ -1,0 +1,5 @@
+<svg viewBox="0 0 256 256" version="1.1" id="root" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+   <path id="path6" style="stroke-width:4.3;stroke-linecap:round;fill-opacity:1"
+      d="M 128 0 A 128 128 0 0 0 0 128 A 128 128 0 0 0 128 256 A 128 128 0 0 0 256 128 A 128 128 0 0 0 128 0 z M 128 11 A 117 117 0 0 1 245 128 A 117 117 0 0 1 128 245 A 117 117 0 0 1 11 128 A 117 117 0 0 1 128 11 z " />
+</svg>
