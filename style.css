@@ -19,8 +19,16 @@ body {
 #clock_area {
     width: calc(100vmin - 40px);
     aspect-ratio: 1;
+
 }
 
-#clock_area .hand {
-    transition: transform .2s;
+#clock_area .marks {
+    font-family: 'Arial';
+    text-anchor: middle;
+    text-align: center;
+    dominant-baseline: central;
+}
+
+#clock_area .hands>* {
+    transform-origin: center;
 }

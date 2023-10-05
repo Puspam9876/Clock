@@ -4,38 +4,32 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" type="image/svg" href="icon.svg" />
+	<link rel="icon" href="icon.png" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="script.js" defer></script>
 	<title>Clock</title>
 </head>
 
 <body>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 101 101" id="clock_area">
-		<circle cx="50" cy="50" r="50" stroke="black" stroke-width="1" fill="white" />
-		<line id="hour_hand" class="hand" x1="50" y1="50" x2="50" y2="20" stroke="green" stroke-width="2"
-			stroke-linecap="round" />
-		<circle cx="50" cy="50" r="3" stroke-width="0" fill="green" />
-		<line id="minute_hand" class="hand" x1="50" y1="50" x2="50" y2="10" stroke="orange" stroke-linecap="round" />
-		<circle cx="50" cy="50" r="2" stroke-width="0" fill="orange" />
-		<line id="second_hand" class="hand" x1="50" y1="50" x2="50" y2="10" stroke="purple" stroke-width="0.5"
-			stroke-linecap="round" />
-		<circle cx="50" cy="50" r="1" stroke-width="0" fill="purple" />
-		<g font-size="7" font-family="Arial">
-			<text x="46" y="9">12</text>
-			<text x="70" y="15">1</text>
-			<text x="85.5" y="30">2</text>
-			<text x="92" y="52.5">3</text>
-			<text x="85.5" y="75">4</text>
-			<text x="70" y="90">5</text>
-			<text x="48" y="96">6</text>
-			<text x="27" y="90">7</text>
-			<text x="10" y="75">8</text>
-			<text x="4" y="52.5">9</text>
-			<text x="10" y="31">10</text>
-			<text x="25" y="15.5">11</text>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="clock_area">
+		<defs id="defs1">
+			<linearGradient id="linearGradient11">
+				<stop style="stop-color:#80C080;" offset="0.86436778" id="stop13" />
+				<stop style="stop-color:#A4D1A4;" offset="0.93942523" id="stop12" />
+				<stop style="stop-color:#008000;" offset="1" id="stop15" />
+			</linearGradient>
+			<radialGradient xlink:href="#linearGradient11" id="radialGradient12" cx="128" cy="128" fx="128" fy="128"
+				r="128" gradientUnits="userSpaceOnUse" />
+		</defs>
+		<g class="ticks"></g>
+		<g class="marks"></g>
+		<g class="hands">
+			<use href="parts/hour-hand.svg#root" id="hour_hand" x="0" y="24" height="52" fill="green" />
+			<use href="parts/minute-hand.svg#root" id="minute_hand" x="0" y="14" height="72" fill="orange" />
+			<use href="parts/second-hand.svg#root" id="second_hand" x="0" y="9" height="82" fill="purple" />
 		</g>
+		<use href="parts/frame.svg#root" x="0" y="0" width="100" height="100" fill="url(#radialGradient12)" />
 	</svg>
 </body>
-<script src="script.js"></script>
 
 </html>
