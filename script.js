@@ -33,7 +33,6 @@ for (let i = 1; i <= 12; i++) {
     text.setAttribute("font-size", 7);
     text.innerHTML = i;
     marksHolder.appendChild(text);
-}
 
 const prevAngle = { h: 0, m: 0, s: 0 };
 function setTime() {
@@ -57,7 +56,7 @@ function setTime() {
 }
 function rotate(hand, prev, current) {
     if (current < prev) current = 360 + current; //To handle transition in circle restart
-    duration = current - prev > 30 ? 0 : 200; // Do not animate in case of large angle gap
+    const duration = current - prev > 30 ? 0 : 200; // Do not animate in case of large angle gap
     hand.animate({ transform: [`rotate(${prev}deg)`, `rotate(${current}deg)`] }, { fill: "forwards", duration });
 }
 setTime();
