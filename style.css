@@ -19,7 +19,6 @@ body {
 #clock_area {
     width: calc(100vmin - 40px);
     aspect-ratio: 1;
-
 }
 
 #clock_area .marks {
