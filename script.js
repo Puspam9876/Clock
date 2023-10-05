@@ -33,6 +33,7 @@ for (let i = 1; i <= 12; i++) {
     text.setAttribute("font-size", 7);
     text.innerHTML = i;
     marksHolder.appendChild(text);
+}
 
 const prevAngle = { h: 0, m: 0, s: 0 };
 function setTime() {
